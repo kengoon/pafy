@@ -14,7 +14,7 @@ else:
 from . import g
 
 
-not_utf8_environment = sys.stdout.encoding == "UTF-8"
+not_utf8_environment = True
 
 
 class GdataError(Exception):
