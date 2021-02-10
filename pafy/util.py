@@ -51,7 +51,7 @@ def utf8_replace(txt):
     :returns: Unicode text without any characters unsupported by locale
     :rtype: str
     """
-    sse = sys.stdout.encoding
+    sse = 'utf-8'
     txt = txt.encode(sse, "replace").decode(sse)
     return txt
 
